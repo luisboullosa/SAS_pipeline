@@ -1,0 +1,118 @@
+# ==============================================================================
+# Git Ignore Configuration for Clinical SAS Platform & Research Data Ecosystem
+# ==============================================================================
+
+# --- Secrets, API Keys & Credentials ---
+.secrets/
+*.secrets/
+*.auth.txt
+*.auth
+_authinfo*
+.authinfo*
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+.env*
+!.env.example
+*token*
+*secret*
+*credential*
+*api_key*
+id_rsa*
+*.id_rsa*
+*.id_ed25519*
+
+# --- Confidential / Internal Assessments ---
+projects/Assessment/
+projects/assessment/
+Assessment/
+assessment/
+
+# --- Archive Binaries ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+SAS.zip
+
+# --- Agent & Skill Customization Directories ---
+.skills/
+skills/
+.gemini/
+.claude/
+.cursor/
+*.skill
+
+# --- Python Virtual Environments & Packages ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Python Bytecode & Test Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# --- Data Caches, Parquet Stores & Large Binaries ---
+data_cache/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# --- Local Runtimes & Third-Party JREs ---
+java/
+java8/
+jre/
+jdk/
+
+# --- Generated PDF & HTML Reports (Output Artifacts) ---
+python/dashboard/static/reports/*.pdf
+python/dashboard/static/reports/*.html
+
+# --- IDEs, Editors & OS Files ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
